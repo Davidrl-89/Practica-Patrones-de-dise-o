@@ -16,6 +16,7 @@
 		5D78B9A8297088C100274846 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D78B9A7297088C100274846 /* Constants.swift */; };
 		5D78B9AD2970895600274846 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D78B9AC2970895600274846 /* ApiClient.swift */; };
 		5D78B9AF2970897600274846 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D78B9AE2970897600274846 /* HeroModel.swift */; };
+		BB5492E02979A034007FD514 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5492DF2979A034007FD514 /* LoginViewModel.swift */; };
 		BBCF3687297866A3004915E5 /* HeroListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCF3686297866A3004915E5 /* HeroListViewModel.swift */; };
 		BBCF368B29786750004915E5 /* HeroesListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCF368A29786750004915E5 /* HeroesListViewCell.swift */; };
 		BBCF368E2978679C004915E5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BBCF368D2978679C004915E5 /* Kingfisher */; };
@@ -25,6 +26,8 @@
 		BBCF3698297869B4004915E5 /* HeroesDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCF3697297869B4004915E5 /* HeroesDetailsView.swift */; };
 		BBCF369A297869E5004915E5 /* HeroesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCF3699297869E5004915E5 /* HeroesDetailsViewController.swift */; };
 		BBCF369C29786B37004915E5 /* HeroesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCF369B29786B37004915E5 /* HeroesListView.swift */; };
+		BBCF36A129786C0C004915E5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCF36A029786C0C004915E5 /* LoginView.swift */; };
+		BBCF36A329786C21004915E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCF36A229786C21004915E5 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,7 @@
 		5D78B9A7297088C100274846 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5D78B9AC2970895600274846 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		5D78B9AE2970897600274846 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
+		BB5492DF2979A034007FD514 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		BBCF3686297866A3004915E5 /* HeroListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListViewModel.swift; sourceTree = "<group>"; };
 		BBCF368A29786750004915E5 /* HeroesListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListViewCell.swift; sourceTree = "<group>"; };
 		BBCF368F297868FD004915E5 /* HeroesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		BBCF3697297869B4004915E5 /* HeroesDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesDetailsView.swift; sourceTree = "<group>"; };
 		BBCF3699297869E5004915E5 /* HeroesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesDetailsViewController.swift; sourceTree = "<group>"; };
 		BBCF369B29786B37004915E5 /* HeroesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListView.swift; sourceTree = "<group>"; };
+		BBCF36A029786C0C004915E5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BBCF36A229786C21004915E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 		5D78B98F2970857C00274846 /* DragonBallBase */ = {
 			isa = PBXGroup;
 			children = (
+				BBCF369D29786BE1004915E5 /* LoginView */,
 				BBCF368529786674004915E5 /* MVVM */,
 				5D78B9A6297088B300274846 /* Utils */,
 				5D78B9A52970888700274846 /* HeroesList */,
@@ -154,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				BBCF3686297866A3004915E5 /* HeroListViewModel.swift */,
+				BB5492DF2979A034007FD514 /* LoginViewModel.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -170,6 +178,31 @@
 			isa = PBXGroup;
 			children = (
 				BBCF3699297869E5004915E5 /* HeroesDetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BBCF369D29786BE1004915E5 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				BBCF369E29786BEF004915E5 /* View */,
+				BBCF369F29786BF5004915E5 /* Controller */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		BBCF369E29786BEF004915E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BBCF36A029786C0C004915E5 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BBCF369F29786BF5004915E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BBCF36A229786C21004915E5 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,14 +287,17 @@
 				BBCF3698297869B4004915E5 /* HeroesDetailsView.swift in Sources */,
 				BBCF3690297868FD004915E5 /* HeroesListViewController.swift in Sources */,
 				5D78B9952970857C00274846 /* ViewController.swift in Sources */,
+				BBCF36A129786C0C004915E5 /* LoginView.swift in Sources */,
 				5D78B9912970857C00274846 /* AppDelegate.swift in Sources */,
 				5D78B9932970857C00274846 /* SceneDelegate.swift in Sources */,
 				5D78B9A8297088C100274846 /* Constants.swift in Sources */,
 				BBCF369C29786B37004915E5 /* HeroesListView.swift in Sources */,
 				BBCF368B29786750004915E5 /* HeroesListViewCell.swift in Sources */,
 				5D78B9AD2970895600274846 /* ApiClient.swift in Sources */,
+				BB5492E02979A034007FD514 /* LoginViewModel.swift in Sources */,
 				BBCF3687297866A3004915E5 /* HeroListViewModel.swift in Sources */,
 				5D78B9AF2970897600274846 /* HeroModel.swift in Sources */,
+				BBCF36A329786C21004915E5 /* LoginViewController.swift in Sources */,
 				BBCF369229786932004915E5 /* HeroesListDataSource.swift in Sources */,
 				BBCF36942978695E004915E5 /* HeroesListViewDelegate.swift in Sources */,
 				BBCF369A297869E5004915E5 /* HeroesDetailsViewController.swift in Sources */,
