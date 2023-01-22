@@ -17,11 +17,11 @@ class HeroListViewModel: NSObject {             // me lo llevo al viewController
     
     
     
-    func   fetchData() {
+    func fetchData() {
         
         let myToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InByaXZhdGUifQ.eyJpZGVudGlmeSI6IkUzM0EzQTYyLUIxN0QtNDg3MC04Qjk3LTRBMzU4QTE5MEY2QyIsImVtYWlsIjoiZHJvYmxlczk4OEBnbWFpbC5jb20iLCJleHBpcmF0aW9uIjo2NDA5MjIxMTIwMH0.KnY3n9Kh6uqG07ttj4UP5d_Q2wBdfsVyYHaLIH2WVnw"
         
-        let apiClient = ApiClient(token: myToken)
+        let apiClient = ApiClient.shared
         
         apiClient.getHeroes { [weak self] heroes, error in
             self?.updateUI?(heroes)

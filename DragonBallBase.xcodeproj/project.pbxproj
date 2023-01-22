@@ -16,7 +16,7 @@
 		5D78B9A8297088C100274846 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D78B9A7297088C100274846 /* Constants.swift */; };
 		5D78B9AD2970895600274846 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D78B9AC2970895600274846 /* ApiClient.swift */; };
 		5D78B9AF2970897600274846 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D78B9AE2970897600274846 /* HeroModel.swift */; };
-		BB5492E02979A034007FD514 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5492DF2979A034007FD514 /* LoginViewModel.swift */; };
+		BB2B4CD6297BCAB900EE4141 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2B4CD5297BCAB900EE4141 /* LoginViewModel.swift */; };
 		BBCF3687297866A3004915E5 /* HeroListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCF3686297866A3004915E5 /* HeroListViewModel.swift */; };
 		BBCF368B29786750004915E5 /* HeroesListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCF368A29786750004915E5 /* HeroesListViewCell.swift */; };
 		BBCF368E2978679C004915E5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BBCF368D2978679C004915E5 /* Kingfisher */; };
@@ -42,7 +42,7 @@
 		5D78B9A7297088C100274846 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5D78B9AC2970895600274846 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		5D78B9AE2970897600274846 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
-		BB5492DF2979A034007FD514 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		BB2B4CD5297BCAB900EE4141 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		BBCF3686297866A3004915E5 /* HeroListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListViewModel.swift; sourceTree = "<group>"; };
 		BBCF368A29786750004915E5 /* HeroesListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListViewCell.swift; sourceTree = "<group>"; };
 		BBCF368F297868FD004915E5 /* HeroesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListViewController.swift; sourceTree = "<group>"; };
@@ -157,11 +157,26 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		BB2B4CD8297D257400EE4141 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB2B4CD5297BCAB900EE4141 /* LoginViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB2B4CD9297D258200EE4141 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BBCF36A229786C21004915E5 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		BBCF368529786674004915E5 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
 				BBCF3686297866A3004915E5 /* HeroListViewModel.swift */,
-				BB5492DF2979A034007FD514 /* LoginViewModel.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -185,8 +200,9 @@
 		BBCF369D29786BE1004915E5 /* LoginView */ = {
 			isa = PBXGroup;
 			children = (
+				BB2B4CD9297D258200EE4141 /* Controller */,
+				BB2B4CD8297D257400EE4141 /* Model */,
 				BBCF369E29786BEF004915E5 /* View */,
-				BBCF369F29786BF5004915E5 /* Controller */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -197,14 +213,6 @@
 				BBCF36A029786C0C004915E5 /* LoginView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		BBCF369F29786BF5004915E5 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				BBCF36A229786C21004915E5 /* LoginViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,9 +300,9 @@
 				5D78B9932970857C00274846 /* SceneDelegate.swift in Sources */,
 				5D78B9A8297088C100274846 /* Constants.swift in Sources */,
 				BBCF369C29786B37004915E5 /* HeroesListView.swift in Sources */,
+				BB2B4CD6297BCAB900EE4141 /* LoginViewModel.swift in Sources */,
 				BBCF368B29786750004915E5 /* HeroesListViewCell.swift in Sources */,
 				5D78B9AD2970895600274846 /* ApiClient.swift in Sources */,
-				BB5492E02979A034007FD514 /* LoginViewModel.swift in Sources */,
 				BBCF3687297866A3004915E5 /* HeroListViewModel.swift in Sources */,
 				5D78B9AF2970897600274846 /* HeroModel.swift in Sources */,
 				BBCF36A329786C21004915E5 /* LoginViewController.swift in Sources */,
